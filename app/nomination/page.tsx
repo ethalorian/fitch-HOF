@@ -18,6 +18,13 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form'
+import dynamic from 'next/dynamic'
+
+// Dynamically import RichTextEditor with no SSR
+const RichTextEditor = dynamic(
+  () => import('../component/rich-text-editor'),
+  { ssr: false }
+)
 
 const formSchema = z.object({
   firstName: z.string().min(2, {
