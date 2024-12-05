@@ -36,7 +36,10 @@ const formSchema = z.object({
   graduationYear: z.string().regex(/^\d{4}$/, {
     message: "Graduation year must be a 4-digit number.",
   }),
-  file: z.instanceof(FileList).refine((files) => files.length > 0, "File is required."),
+  file: z.any().refine(
+    (files) => typeof window === 'undefined' || (files instanceof FileList && files.length > 0),
+    "File is required."
+  ),
 })
 
 export default function NominationPage() {
