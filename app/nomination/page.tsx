@@ -2,13 +2,13 @@
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { Navbar } from '../component/navbar'
-import { Footer } from '../component/footer'
+import { Navbar } from '../components/navbar'
+import { Footer } from '../components/footer'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { Button } from '@/app/components/ui/button'
+import { Input } from '@/app/components/ui/input'
+import { Label } from '@/app/components/ui/label'
 import {
   Form,
   FormControl,
@@ -17,12 +17,12 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form'
+} from '@/app/components/ui/form'
 import dynamic from 'next/dynamic'
 
 // Dynamically import RichTextEditor with no SSR
 const RichTextEditor = dynamic(
-  () => import('../component/rich-text-editor'),
+  () => import('../components/rich-text-editor'),
   { ssr: false }
 )
 

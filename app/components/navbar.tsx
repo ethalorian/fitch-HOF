@@ -7,15 +7,15 @@ import { usePathname } from 'next/navigation'
 import { Menu, User } from 'lucide-react'
 
 import { cn } from '@/lib/utils'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/app/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+} from '@/app/components/ui/dropdown-menu'
+import { Sheet, SheetContent, SheetTrigger } from '@/app/components/ui/sheet'
 
 // This is a placeholder for your authentication logic
 const useAuth = () => ({
@@ -26,9 +26,9 @@ const useAuth = () => ({
 
 const navigation = [
   { name: 'Home', href: '/' },
+  { name: 'Hall Of Fame', href: '/hof' },
   { name: 'About', href: '/about' },
   { name: 'Nomination', href: '/nomination' },
-  { name: 'Classes', href: '/classes' },
 ]
 
 export function Navbar() {
