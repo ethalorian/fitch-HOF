@@ -28,7 +28,7 @@ export default function AnimatedBackground() {
     const sparkles: Sparkle[] = []
     const maxSparkles = 150
 
-    function createSparkle(): Sparkle {
+    function createSparkle(canvas: HTMLCanvasElement): Sparkle {
       return {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -61,7 +61,7 @@ export default function AnimatedBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       if (sparkles.length < maxSparkles && Math.random() < 0.3) {
-        sparkles.push(createSparkle())
+        sparkles.push(createSparkle(canvas))
       }
 
       for (let i = sparkles.length - 1; i >= 0; i--) {

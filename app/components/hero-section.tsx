@@ -5,10 +5,12 @@ import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
 import { Button } from "./ui/button"
 import BackgroundEffects from './background-effects'
+import AnimatedBackground from './animated-background'
 
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+      <AnimatedBackground />
       <BackgroundEffects />
       
       <div className="container mx-auto px-4 py-20 z-[2] relative">
