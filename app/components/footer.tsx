@@ -21,7 +21,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
             <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-              © 2024 Your Company. All rights reserved.
+              © 2024 Fitchburg High School Hall of Fame. All rights reserved.
             </p>
             <nav className="flex gap-4 text-sm text-muted-foreground">
               <a href="/privacy" className="hover:underline">

@@ -12,8 +12,6 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/app/components/ui/navigation-menu"
-import { Navbar } from "../components/navbar"
-import { Footer } from "../components/footer"
 import { Trophy } from 'lucide-react'
 
 const inductionClasses: { year: number; inductees: string[] }[] = [
@@ -35,7 +33,6 @@ const inductionClasses: { year: number; inductees: string[] }[] = [
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center bg-gradient-to-b from-background to-secondary/10 px-4 py-12">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold tracking-tighter mb-2">Hall of Fame</h1>
@@ -115,7 +112,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   )
 }
