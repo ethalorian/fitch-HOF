@@ -26,14 +26,14 @@ export default function HeroSection() {
               Inspiring <span className="text-primary">Greatness</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Celebrating extraordinary athletes who have shaped the world of sports
+              All Hail the Red and Gray
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Explore Hall of Fame
+              Nominate an Athlete
               </Button>
               <Button variant="outline" size="lg">
-                Nominate an Athlete
+              Donate Today 
               </Button>
             </div>
           </motion.div>

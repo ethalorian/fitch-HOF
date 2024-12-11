@@ -9,7 +9,7 @@ export default function BackgroundEffects() {
       {[...Array(8)].map((_, i) => (
         <motion.div
           key={`h-${i}`}
-          className="absolute h-[2px] bg-gradient-to-r from-transparent via-rose-500/50 to-transparent"
+          className="absolute h-[4px] bg-gradient-to-r from-transparent via-rose-500/50 to-transparent"
           style={{
             top: `${12 * (i + 1)}%`,
             left: 0,
@@ -32,7 +32,7 @@ export default function BackgroundEffects() {
       {[...Array(6)].map((_, i) => (
         <motion.div
           key={`v-${i}`}
-          className="absolute w-[2px] bg-gradient-to-b from-transparent via-rose-500/50 to-transparent"
+          className="absolute w-[4px] bg-gradient-to-b from-transparent via-rose-500/50 to-transparent"
           style={{
             left: `${16 * (i + 1)}%`,
             top: 0,
